@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^8.5.0",
+    "@vueuse/nuxt": "^8.5.0",
+    "autoprefixer": "^10.4.7",
+    "nuxt": "^3.0.0-rc.4",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
+    "aos": "^2.3.4",
+    "ethers": "^5.6.8",
+    "gsap": "^3.10.4",
+    "mitt": "^3.0.0",
+    "rss-parser": "^3.12.0",
+    "vue-toastification": "^2.0.0-rc.5"
+  }
+}

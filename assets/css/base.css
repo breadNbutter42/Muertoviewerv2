@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Vue-Toastification__toast {
+  border-radius: 5px !important;
+  min-width: 240px !important;
+}
+.Vue-Toastification__toast-body {
+  font-size: 14px !important;
+}
+
+.textshadow{
+  text-shadow: 0.05em 0 0 #00aeff, -0.03em -0.04em 0 #f6050a,
+    0.025em 0.04em 0 #fffc00;
+}
+
+.link:hover {
+  color: black;
+  text-shadow: 0 0.3em 0 #00aeff, 0 -0.3em 0 #f6050a;
+}
+
+.scrollbar {
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar {
+background: transparent;
+width: 4px;
+}
+.scrollbar::-webkit-scrollbar-track {
+background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+background: rgb(244, 244, 245)
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(244, 244, 245)
+}
+
+.scrollbar-lightbox {
+  overflow-y: scroll;
+}
+.scrollbar-lightbox::-webkit-scrollbar {
+  display: none;
+}
+
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  @apply font-thin lining-nums font-antic scrollbar;
+}
+
+body {
+  @apply bg-zinc-200 dark:bg-purple-900 text-black dark:text-white transition-all;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
